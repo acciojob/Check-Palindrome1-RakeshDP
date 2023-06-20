@@ -2,7 +2,7 @@
 
 function palindrome(str){
 	// Remove non-alphanumeric characters and convert to lowercase
-  const cleanedString = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  const cleanedString = str.replace(/" "/g, '').toLowerCase();
 
   let left = 0;
   let right = cleanedString.length - 1;
@@ -20,3 +20,4 @@ function palindrome(str){
 	
 }
 module.exports = palindrome
+// const cleanedString = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
